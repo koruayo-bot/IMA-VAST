@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VAST version="2.0">
-  <Ad>
+<VAST version="3.0">
+  <Ad id="sample-ad">
     <InLine>
+      <AdSystem>Test VAST</AdSystem>
+      <AdTitle>Sample MP4 Ad</AdTitle>
+
+      <Impression><![CDATA[https://example.com/impression]]></Impression>
+
       <Creatives>
-        <Creative>
+        <Creative id="creative-1">
           <Linear>
+            <Duration>00:00:52</Duration>
+
             <MediaFiles>
-              <MediaFile delivery="progressive" type="video/mp4">
-                https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4
-              </MediaFile>
+              <MediaFile
+                delivery="progressive"
+                type="video/mp4"
+                width="640"
+                height="360"
+                bitrate="500"
+                scalable="true"
+                maintainAspectRatio="true"><![CDATA[https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4]]></MediaFile>
             </MediaFiles>
+
           </Linear>
         </Creative>
       </Creatives>
+
     </InLine>
   </Ad>
 </VAST>
