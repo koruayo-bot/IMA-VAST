@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0">
 
   <vmap:AdBreak timeOffset="start" breakType="linear" breakId="preroll-1">
     <vmap:AdSource id="ad-source-1" allowMultipleAds="false" followRedirects="true">
       <vmap:AdTagURI templateType="vast3"><![CDATA[
+
 https://koruayo-bot.github.io/IMA-VAST/vast.xml
+
       ]]></vmap:AdTagURI>
     </vmap:AdSource>
   </vmap:AdBreak>
